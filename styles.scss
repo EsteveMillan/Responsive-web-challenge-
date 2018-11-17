@@ -1,0 +1,15 @@
+
+$primary-color: red;
+
+nav {
+  color: $primary-color;
+  width: 100%;
+  a {
+    color: $primary-color;
+    width: 100px;
+  
+    &.first {
+      color: green;
+    }
+  }
+}

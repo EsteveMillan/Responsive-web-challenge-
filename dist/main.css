@@ -1,0 +1,9 @@
+nav {
+  color: red;
+  width: 100%; }
+  nav a {
+    color: red;
+    width: 100px; }
+    nav a.first {
+      color: green; }
+
