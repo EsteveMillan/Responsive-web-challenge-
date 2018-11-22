@@ -1,0 +1,56 @@
+header{
+
+    @include flex-basics(row, nowrap, center, center);
+    background-color: $light-grey;
+    position: fixed;
+    width: 100%;
+   
+}
+
+#menu{
+
+    @include flex-basics(row, nowrap, flex-start, center);
+    @include site-main-margin;
+    height: 50px;
+    
+
+    ul{
+
+        @include flex-basics(row, nowrap, space-between, center);
+        flex-basis: 20%;
+        margin: 0px;
+        padding: 0;
+
+        ul{
+             width: 100%; 
+        }
+
+        a{
+            @include flex-basics(row, nowrap, center, center);
+            height: 50px;
+            width: 100%; 
+            color: $middle-grey;
+            padding: 0 3px
+         }
+
+         a:hover{
+            color: $dark-grey;
+            background-color: $middle-grey;
+         }
+
+
+    }
+
+    #logo-nav{
+
+        font-size: $m;
+        font-weight: bold;
+        margin-right: 20px;
+
+        a:hover{
+        
+            background-color: $light-grey;
+         }
+    }
+
+}

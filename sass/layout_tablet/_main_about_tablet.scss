@@ -1,0 +1,52 @@
+
+
+.about-container{
+
+    @include flex-basics(row, wrap, center, flex-start );
+    @include site-tablet-margin;
+    padding: $standard-section-padding;
+    
+
+    .maintext {
+        flex-basis: $tablet-content-width;
+    }
+    aside{
+        flex-basis: $tablet-content-width;
+        
+        .higlight-image {
+            align-self: center;
+        }
+        
+    }
+}
+
+
+.collapsible-group{
+
+    @include flex-basics(row, wrap, space-between, flex-start);
+    margin-bottom: 20px ;
+   
+    .collapsible-item{
+        
+        flex-basis: 100%;
+        @include box-style;
+        background-color: $light-grey;
+        padding: 0;
+        margin-bottom: 10px;
+        
+
+        h3{
+         padding: 10px;
+         margin: 0px;
+        }
+        
+        p{
+        
+        background-color: $secondary-color;
+        border-top:  solid 1px $light-grey;
+        padding: 15px 15px; 
+        margin: 0px;
+
+        }                       
+    }
+}

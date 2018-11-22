@@ -1,0 +1,35 @@
+
+
+
+.contact-container{
+
+    @include flex-basics(column, nowrap, space-between, flex-start );
+    @include site-mobile-margin;
+    padding: $standard-section-padding;
+
+    .contact-form {
+        
+        @include flex-basics(row, wrap, space-between, flex-start);
+        flex-basis: $main-container-standard;
+        margin-bottom: 20px;
+
+
+        [type="text"] , textarea {
+
+            @include box-style;
+            flex-basis: 100%;
+            margin-bottom: 20px;
+        }
+
+        label{
+            margin-bottom: 10px;
+        }
+
+        
+    }
+    aside{
+        flex-basis: $aside-standard;
+    }
+}
+
+

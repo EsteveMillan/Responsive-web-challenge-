@@ -1,0 +1,65 @@
+#wellcome-image{
+    background-image: url("assets/site_showcase_bg.jpg");
+    @include full-div-images (cover);
+
+    #wellcome-content{
+
+        @include flex-basics(row, wrap, center, center );
+        height: 400px;
+        color: $secondary-color;
+        
+    
+        .mobile-img{
+              display: none;
+        }
+
+        .wellcome-first-section{
+
+            @include flex-basics( row, wrap, center, center );
+            @include site-tablet-margin;
+            font-size: $xs;
+            text-align: center;
+
+        }
+
+        .wellcome-first-section h1{
+            font-size: $xl;
+            text-align: center;
+            flex-basis: 100%;
+
+        }
+    
+        .logos{
+            
+            @include flex-basics(column, nowrap, space-between, center );
+            flex-basis: 65%;
+            
+        }
+
+        .logos img{
+            
+            margin-bottom: 20px;
+    
+        }
+    }
+
+}
+
+
+.the-latest{
+
+    @include flex-basics(column, nowrap, space-between, center );
+    @include site-mobile-margin;
+    padding: $large-section-padding;
+    
+
+}
+
+
+
+
+
+
+
+
+

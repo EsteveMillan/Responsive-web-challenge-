@@ -1,15 +1,10 @@
 
-$primary-color: red;
+@import 'sass/abstracts/vars';
+@import 'sass/abstracts/mixins';
 
-nav {
-  color: $primary-color;
-  width: 100%;
-  a {
-    color: $primary-color;
-    width: 100px;
-  
-    &.first {
-      color: green;
-    }
-  }
-}
+@import 'sass/base/general';
+@import 'sass/base/tipography';
+
+@import 'sass/components/higlights';
+
+@import 'sass/media_orders'

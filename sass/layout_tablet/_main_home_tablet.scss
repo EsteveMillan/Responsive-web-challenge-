@@ -1,0 +1,58 @@
+
+#wellcome-image{
+    background-image: url("assets/site_showcase_bg.jpg");
+    @include full-div-images (cover);
+
+    #wellcome-content{
+
+        @include flex-basics(column, nowrap, center, center );
+        height: 400px;
+        color: $secondary-color;
+    
+        
+    
+        .mobile-img{
+              display: none;
+        }
+
+        .wellcome-first-section{
+
+            @include flex-basics( row, wrap, center, center );
+            font-size: $s;
+            text-align: center;
+
+        }
+
+        .wellcome-first-section h1{
+            font-size: $xxl;
+            flex-basis: 100%;
+        }
+    
+        .logos{
+            
+            @include flex-basics(row, nowrap, space-between, center );
+            
+            
+        }
+        
+    }
+
+}
+
+
+.the-latest{
+
+    @include flex-basics(row, wrap, space-between, center );
+    @include site-main-margin;
+    padding: $large-section-padding;
+
+}
+
+
+
+
+
+
+
+
+

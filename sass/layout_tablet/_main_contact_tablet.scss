@@ -1,0 +1,38 @@
+
+.contact-container{
+
+    @include flex-basics(row, wrap, space-between, flex-start );
+    @include site-tablet-margin;
+    padding: $standard-section-padding;
+
+    .contact-form {
+        
+        @include flex-basics(row, wrap, space-between, flex-start);
+        flex-basis: $tablet-content-width;
+        margin-bottom: 20px;
+
+
+        [type="text"] , textarea {
+
+            @include box-style;
+            flex-basis: 100%;
+            margin-bottom: 20px;
+        }
+
+        label{
+            margin-bottom: 10px;
+        }
+
+        
+    }
+    aside{
+        
+        flex-basis: $tablet-content-width;
+
+        .higlight-image {
+            align-self: center;
+        }
+    }
+}
+
+

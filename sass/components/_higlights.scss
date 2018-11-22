@@ -1,0 +1,32 @@
+
+.highlight{
+
+@include flex-basics(column, nowrap, flex-start, flex-start );
+@include box-style;
+margin-bottom: 20px;
+
+
+
+    .read-more-button{
+        @include standard-button-style;
+        
+    }
+    img{
+        max-width: 100%;
+    }
+
+    @media screen and ( min-width: $tablet-min ) and (max-width: $tablet-max){
+
+        flex-basis: $higlight-tablet;
+        margin-bottom: 20px;
+    }
+
+    @media screen and ( min-width: $desktop ){
+
+        @include flex-basics(column, wrap, flex-start, flex-start );
+        flex-basis: $aside-standard;
+        
+    }
+    
+}
+

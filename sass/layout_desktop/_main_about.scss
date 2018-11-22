@@ -1,0 +1,48 @@
+
+
+
+.about-container{
+
+    @include flex-basics(row, nowrap, space-between, flex-start );
+    @include site-main-margin;
+    padding: $standard-section-padding;
+
+    .maintext {
+        flex-basis: $main-container-standard;
+    }
+    aside{
+        flex-basis: $aside-standard;
+    }
+}
+
+
+.collapsible-group{
+
+    @include flex-basics(row, wrap, space-between, flex-start);
+    
+   
+    .collapsible-item{
+        
+        flex-basis: 100%;
+        @include box-style;
+        background-color: $light-grey;
+        padding: 0;
+        margin-bottom: 10px;
+        
+
+        h3{
+         padding: 10px;
+         margin: 0px;
+        }
+        
+        p{
+        
+        background-color: $secondary-color;
+        border-top:  solid 1px $light-grey;
+        padding: 15px 15px; 
+        margin: 0px;
+
+        }                       
+    }
+}
+

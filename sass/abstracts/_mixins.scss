@@ -1,0 +1,74 @@
+
+// FLEX BASICS AND IMAGES
+
+@mixin flex-basics ($direction , $wrap, $justify, $align) {
+
+    display: flex;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+    justify-content: $justify;
+    align-items: $align;
+    
+}
+
+
+@mixin full-div-images ($image-style){
+
+    background-size: $image-style ;
+    background-repeat: no-repeat;
+   
+    
+}
+
+// GLOBAL PAGE MARGINS
+
+@mixin site-main-margin {
+
+    flex-basis: 80%
+    
+}
+
+@mixin site-tablet-margin {
+
+    flex-basis: 90%
+    
+}
+
+@mixin site-mobile-margin {
+
+    flex-basis: 95%
+    
+}
+
+
+// BOX & BUTTON STYLE
+
+@mixin box-style {
+
+    border: solid 1px $light-grey;
+    padding: 10px;
+    border-radius: 3px;
+    box-shadow: 0px 0px 3px $light-grey;
+  
+  }
+  
+@mixin standard-button-style {
+  
+    margin: 0 0 10px 0;
+    font: $main-font;
+    background: none;
+    padding: 10px;
+    color: $dark-grey;
+    font-size: 15px ;
+    border: solid 1px $light-grey;
+    background-color: $secondary-color;
+    border-radius: 5px;
+  
+    &:hover{
+  
+      color: $secondary-color;
+      background-color: $primary-color;
+  
+    }
+  
+  }
